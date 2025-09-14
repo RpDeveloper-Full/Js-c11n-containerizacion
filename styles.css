@@ -1,0 +1,65 @@
+:root{
+  --bg:#f3f6fa;
+  --card:#fff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  font-family:system-ui,sans-serif;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:#111;
+  padding:24px;
+  display:flex;
+  justify-content:center;
+}
+
+.container{
+  width:100%;
+  max-width:800px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+h1{margin:0 0 10px 0;font-size:1.5rem}
+h2{margin:0 0 8px 0;font-size:1.1rem}
+
+.card{
+  background:var(--card);
+  padding:16px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+}
+
+form{display:flex;gap:8px;flex-wrap:wrap}
+form input{padding:6px 8px;border-radius:6px;border:1px solid #d1d5db}
+form button{padding:6px 12px;border:0;border-radius:6px;background:var(--accent);color:#fff;cursor:pointer}
+
+.containers{display:flex;flex-direction:column;gap:10px}
+
+.container-card{
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  padding:10px;
+  background:#fafafa;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.meta{display:flex;flex-direction:column;gap:4px}
+.status{font-size:0.85rem;font-weight:600}
+.status.running{color:green}
+.status.stopped{color:red}
+
+.actions{display:flex;gap:6px}
+.actions button{
+  padding:4px 8px;
+  border-radius:6px;
+  border:1px solid #d1d5db;
+  background:#fff;
+  cursor:pointer;
+  font-size:0.85rem;
+}

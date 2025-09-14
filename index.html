@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Demo c11n — Contenerización</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>c11n Demo (Simulación de Contenerización)</h1>
+
+    <section class="card">
+      <h2>Nuevo contenedor</h2>
+      <form id="formContainer">
+        <label for="name">Nombre:</label>
+        <input id="name" type="text" required placeholder="mi-app" />
+        <label for="image">Imagen:</label>
+        <input id="image" type="text" required placeholder="node:18" />
+        <button type="submit">Crear</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Contenedores</h2>
+      <div id="containers" class="containers"></div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
